@@ -1,0 +1,1 @@
+This project was developed to showcase and refine my web development skills. It serves as a responsive web page designed to provide a clear and easily accessible list of farming character's book materials.
