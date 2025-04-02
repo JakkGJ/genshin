@@ -1,0 +1,172 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #050c17;
+  }
+  
+  h1, h2, h3, p, li {
+    color: aliceblue;
+}
+
+a:link, a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+.container {
+    display: flex;
+    margin-left: 250px;
+}
+
+.container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.sidebar {
+    height: auto;
+    position: fixed;
+    /* border: 1px solid aliceblue; */
+    background: #212731;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    margin: 9.5px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    margin: 20%;
+    /*border: 1px solid aliceblue;*/
+    border-radius: 8px;
+}
+
+
+.media {
+    flex: 0;
+    /*border: 1px solid aliceblue;*/
+    border-radius: 8px;
+    text-align: center;
+    max-height: fit-content;
+    background: #212731;
+}
+
+.media > iframe {
+    border-radius: 15px;
+    display: block;
+    /*border: 1px solid aliceblue;*/
+    text-align: center;
+}
+
+.sidebar a, h3 {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.banner {
+    max-width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    clip-path: inset(0% 10% 13% 7% round 10px);
+    margin-left: 15px;
+}
+
+.wrapper {
+    position: relative; /* Ensure elements are properly stacked */
+  }
+
+  .feed {
+    margin-top: 20px;
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #212731;
+    border-radius: 8px;
+  }
+
+  .navbar > ul li {
+    float: left;
+  }
+
+  .navbar > ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar > ul li a:hover:not(.active) {
+    background-color: #575757;
+  }
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        text-align: center;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .media > iframe {
+        width: 100%;
+    }
+
+    .media {
+        display: none;
+    }
+    .banner-img {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        position: static;
+        text-align: center;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .media > iframe {
+        width: 100%;
+    }
+
+    .media {
+        display: none;
+    }
+    .banner-img {
+        margin-left: 5px;
+    }
+}
