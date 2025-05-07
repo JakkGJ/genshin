@@ -86,8 +86,8 @@ a:visited {
     max-width: 100%;
     height: auto;
     object-fit: scale-down;
-    clip-path: inset(0% 10% 13% 7% round 10px);
-    margin-left: 15px;
+    clip-path: inset(0% 15% 13% 1% round 10px);
+    margin-left: 55px;
 }
 
 .wrapper {
@@ -144,8 +144,9 @@ a:visited {
     .media {
         display: none;
     }
+    
     .banner-img {
-        margin-left: 5px;
+        margin-left: 20px;
     }
 
     .sidebar {
@@ -153,7 +154,7 @@ a:visited {
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .sidebar {
         position: static;
         text-align: center;
@@ -172,7 +173,7 @@ a:visited {
     }
 
     .banner-img {
-        margin-left: 5px;
+        margin-left: 50px;
     }
     
     .sidebar {
