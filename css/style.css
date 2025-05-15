@@ -93,12 +93,12 @@ h3 {
     height: auto;
     object-fit: scale-down;
     clip-path: inset(0% 4% 8% 0% round 10px);
-    margin-left: 12%;
+    margin-left: 11.5%;
 }
 
 .wrapper {
     position: relative;
-    /* Ensure elements are properly stacked */
+    /* Ensures that elements are properly stacked */
 }
 
 .feed {
@@ -155,7 +155,7 @@ h3 {
     }
 
     .banner-img {
-        margin-left: 12%;
+        margin-left: 11.5%;
     }
 
     .sidebar {
@@ -184,7 +184,7 @@ h3 {
     }
 
     .banner-img {
-        margin-left: 12%;
+        margin-left: 11.5%;
     }
 
     .sidebar {
