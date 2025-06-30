@@ -2,12 +2,22 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+    --BGCOLOR: #050c17;
+    --TXTCOLOR: aliceblue;
+    --LINKCOLOR: aqua;
+    --LINKVISITEDCOLOR: aquamarine;
+    --SBBGCOLOR: #212731;
+    --HOVERCOLOR: #575757;
+    --ACTIVECOLOR: #04AA6D;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-    background-color: #050c17;
+    background-color: var(--BGCOLOR);
 }
 
 h1,
@@ -15,17 +25,17 @@ h2,
 h3,
 p,
 li {
-    color: aliceblue;
+    color: var(--TXTCOLOR);
 }
 
 a:link,
 a:hover {
-    color: aqua;
+    color: var(--LINKCOLOR);
     text-decoration: none;
 }
 
 a:visited {
-    color: aquamarine;
+    color: var(--LINKVISITEDCOLOR);
 }
 
 iframe {
@@ -47,7 +57,7 @@ iframe {
     height: auto;
     position: fixed;
     /* border: 1px solid aliceblue; */
-    background: #212731;
+    background: var(--SBBGCOLOR);
     border-radius: 8px;
     font-size: 1.3rem;
     margin: 9.5px 9.5px 0px 9.5px;
@@ -68,7 +78,7 @@ iframe {
     border-radius: 8px;
     text-align: center;
     max-height: fit-content;
-    background: #212731;
+    background: var(--SBBGCOLOR);
 }
 
 .media>iframe {
@@ -87,7 +97,7 @@ h3 {
 }
 
 .sidebar a:hover {
-    background-color: #575757;
+    background-color: var(--HOVERCOLOR);
 }
 
 .banner {
@@ -114,7 +124,7 @@ h3 {
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: var(--ACTIVECOLOR);
 }
 
 .navbar>ul {
@@ -122,7 +132,7 @@ h3 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #212731;
+    background-color: var(--SBBGCOLOR);
     border-radius: 8px;
 }
 
@@ -132,14 +142,14 @@ h3 {
 
 .navbar>ul li a {
     display: block;
-    color: white;
+    /* color: white; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar>ul li a:hover:not(.active) {
-    background-color: #575757;
+    background-color: var(--HOVERCOLOR);
 }
 
 @media (max-width: 767px) {
